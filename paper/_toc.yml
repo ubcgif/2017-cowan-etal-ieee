@@ -1,0 +1,4 @@
+format: jb-book
+root: DCowanVRM2017.tex
+chapters:
+  - file: Appendix.tex
