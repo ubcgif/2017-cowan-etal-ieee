@@ -14,7 +14,7 @@ project:
         name: Geophysical Inversion Facility, University of British Columbia, Vancouver, British Columbia
     - name: Lin-Ping Song
       email: lpsong@eoas.ubc.ca
-    #   orcid: 
+    #   orcid:
       affiliation: ubc
     - name: Douglas W. Oldenburg
       email: doug@eoas.ubc.ca
@@ -23,9 +23,10 @@ project:
   doi: 10.1109/TGRS.2017.2675406
   # arxiv: ARXIV
   # github: GITHUB-URL
-  date: 2017/04/06 # date of publication
+  date: 2017-04-06 # date of publication
   # license: CC-BY-4.0  # uncomment this and the line below if open access
   # open_access: true
+  banner: banner
   venue:
     title: IEEE
     url: https://ieeexplore.ieee.org/document/7893711
@@ -34,7 +35,7 @@ project:
     # accepted: YYYY/MM/DD
     published: 2017/04/06
   keywords:
-    - Viscous remanent magnetization 
+    - Viscous remanent magnetization
     - magnetic soil
     - inductive response
     - a circular loo
@@ -51,5 +52,5 @@ site:
   template: article-theme
   actions:
     - title: pdf
-      url: DCowanVRM2017.pdf.pdf
+      url: DCowanVRM2017.pdf
       static: true
