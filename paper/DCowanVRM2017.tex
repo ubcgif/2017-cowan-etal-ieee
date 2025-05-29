@@ -161,9 +161,9 @@ To effectively characterize the impact of viscous remanent magnetization (VRM) o
 %=======================================================
 
 \section{Introduction}
-Many inductive source time-domain electromagnetic (TEM) systems use a step-off like excitation to measure the response from a desired target. In lateritic soils, sudden removal of the transmitter's primary field induces a time-dependent magnetic relaxation due to the presence of superparamagnetic (SP) iron-oxide grains \cite{Buselli1982, Barsukov2001,Billings2003,Pasion2007,Zadorozhnaya2012}. This magnetic relaxation process is known as viscous remanent magnetization (VRM), magnetic viscosity or magnetic after-effect \cite{Dabas1992,Neel1949,Moskowitz1985}. The VRM experienced by a lateritic soil generates a distinct transient response from that of a non-magnetic conductive soil. This response, termed the VRM response, can severely contaminate the TEM responses from conductive ore bodies and unexploded ordnance items when lateritic soils are prominent \cite{Butler2003, Billings2003,Pasion2007,Buselli1982,Barsukov2001,Zadorozhnaya2012}. Thus to properly account for the VRM signal in a set of TEM data, it is of practical interest to first understand the behaviours of the VRM response.
+Many inductive source time-domain electromagnetic (TEM) systems use a step-off like excitation to measure the response from a desired target. In lateritic soils, sudden removal of the transmitter's primary field induces a time-dependent magnetic relaxation due to the presence of superparamagnetic (SP) iron-oxide grains \citep{Buselli1982, Barsukov2001,Billings2003,Pasion2007,Zadorozhnaya2012}. This magnetic relaxation process is known as viscous remanent magnetization (VRM), magnetic viscosity or magnetic after-effect \citep{Dabas1992,Neel1949,Moskowitz1985}. The VRM experienced by a lateritic soil generates a distinct transient response from that of a non-magnetic conductive soil. This response, termed the VRM response, can severely contaminate the TEM responses from conductive ore bodies and unexploded ordnance items when lateritic soils are prominent \citep{Butler2003, Billings2003,Pasion2007,Buselli1982,Barsukov2001,Zadorozhnaya2012}. Thus to properly account for the VRM signal in a set of TEM data, it is of practical interest to first understand the behaviours of the VRM response.
 
-Over the past decades, studies have been done to characterize the VRM responses exhibited by magnetically viscous soils \cite{Pasion2002, Butler2003, Billings2003,Pasion2007,Buselli1982,Barsukov2001,Zadorozhnaya2012}.  It is well-known that the induced voltage within a receiver coil due to the VRM  response has a $1/t$ decay, where $t$ is the time. Through experimental, analytical and numerical means, researchers have also shown  that measured VRM responses can be diminished by: separating the receiver from the transmitter, increasing the size of the transmitter loop, or elevating the sensor further above the ground \cite{Lee1984, Buselli1982, Barsukov2001, Das2006, Kozhevnikov2007, Zadorozhnaya2012}. Despite providing significant insight, some details regarding the VRM response and its computation appear elusive. Existing numerical and analytical methods \cite{Billings2003, Kozhevnikov2007, Pasion2007, Barsukov2001,Das2004, Druyts2009, Lee1984, Das2006} are both complicated and lack  sufficient insight regarding the quantitative dependence of the VRM  response on the survey geometry. In addition, the current understanding of the VRM response is mainly drawn from the vertical component. With the increasing development of advanced tri-axial TEM sensors, characterizing the radial VRM response is another necessary and desirable aspect.
+Over the past decades, studies have been done to characterize the VRM responses exhibited by magnetically viscous soils \citep{Pasion2002, Butler2003, Billings2003,Pasion2007,Buselli1982,Barsukov2001,Zadorozhnaya2012}.  It is well-known that the induced voltage within a receiver coil due to the VRM  response has a $1/t$ decay, where $t$ is the time. Through experimental, analytical and numerical means, researchers have also shown  that measured VRM responses can be diminished by: separating the receiver from the transmitter, increasing the size of the transmitter loop, or elevating the sensor further above the ground \citep{Lee1984, Buselli1982, Barsukov2001, Das2006, Kozhevnikov2007, Zadorozhnaya2012}. Despite providing significant insight, some details regarding the VRM response and its computation appear elusive. Existing numerical and analytical methods \citep{Billings2003, Kozhevnikov2007, Pasion2007, Barsukov2001,Das2004, Druyts2009, Lee1984, Das2006} are both complicated and lack  sufficient insight regarding the quantitative dependence of the VRM  response on the survey geometry. In addition, the current understanding of the VRM response is mainly drawn from the vertical component. With the increasing development of advanced tri-axial TEM sensors, characterizing the radial VRM response is another necessary and desirable aspect.
 
 In this paper, we attempt to fill gaps left in previous studies of the VRM response. We consider a circular transmitter loop over a magnetically viscous half-space and derive simplified analytical expressions for the vertical and horizontal components of the VRM response. Both the magnetic flux and its time derivative are considered for several survey configurations. With the set of new formulae, we are able to effectively model the transient VRM response directly as a function of the survey's geometric properties and predict the times when the VRM signal dominates the TEM response. As a result, quantitative information can easily be obtained to characterize the amplitude and time range of transient VRM responses.
 
@@ -180,17 +180,17 @@ The remainder of this paper is organized as follows. In section II, we review N\
 
 \section{Magnetic Viscosity in Lateritic Soils: A Review of N\'{e}el Relaxation Theory}
 \label{secAfterEffect}
-The magnetic viscosity observed in lateritic soils is commonly understood using thermal relaxation models \cite{Neel1949} for a collection of non-interacting SP single-domain grains \cite{Buselli1982,Moskowitz1985,Dabas1992,Pasion2002,Billings2003,Pasion2007}. In this section, we present mathematical expressions derived by N\'{e}el \cite{Neel1949} that will be used later to predict the VRM response for a half-space.
+The magnetic viscosity observed in lateritic soils is commonly understood using thermal relaxation models \citep{Neel1949} for a collection of non-interacting SP single-domain grains \citep{Buselli1982,Moskowitz1985,Dabas1992,Pasion2002,Billings2003,Pasion2007}. In this section, we present mathematical expressions derived by \cite{Neel1949} that will be used later to predict the VRM response for a half-space.
 
 %==========================================
 %       SUBSECTION: MAGNETIC SUSCEPTIBILITY
 %==========================================
 \subsection{Frequency-Dependent Magnetic Susceptibility}
-Magnetic susceptibility relates the induced magnetization $\vec M (\omega)$ to the applied magnetic field $\vec H (\omega)$. For  lateritic soils, the magnetic susceptibility can be frequency-dependent \cite{Lee1984,Dabas1992,Fannin1995}:
+Magnetic susceptibility relates the induced magnetization $\vec M (\omega)$ to the applied magnetic field $\vec H (\omega)$. For  lateritic soils, the magnetic susceptibility can be frequency-dependent \citep{Lee1984,Dabas1992,Fannin1995}:
 \begin{equation}
 \vec M(\omega) = \chi (\omega) \vec H (\omega).
 \end{equation}
-By assuming that all SP grains are identical, the frequency-dependent magnetic susceptibility for a theoretical sample can be expressed using a Debye model \cite{Dabas1992,Mullins1973,Pasion2007}:
+By assuming that all SP grains are identical, the frequency-dependent magnetic susceptibility for a theoretical sample can be expressed using a Debye model \citep{Dabas1992,Mullins1973,Pasion2007}:
 \begin{equation}
 \chi(\omega) = \chi_\infty + \frac{\Delta \chi}{1 + i\omega \tau},
 \label{eqChiOmegaDebye}
@@ -200,13 +200,13 @@ where $\tau$ is the time-relaxation constant for the collection of SP grains, $\
 \tau =  \tau_0 \; \exp \Bigg ( \frac{E_b}{k_B T} \Bigg ),
 \label{eqNeelRelaxationTime}
 \end{equation}
-where $k_B$ is the Boltzmann constant, $T$ is the absolute temperature, and $\tau_0 \sim 10^{-9}$ s is the "attempt time". $E_b$ represents the energy barriers that maintain the pre-existing orientations of individual SP grains. In natural soils, $E_b$ is not the same for all SP grains, and instead forms a distribution. By Eq. (\ref{eqNeelRelaxationTime}), lateritic soils are characterized by a distribution of time-relaxation constants that is represented using a weighting function $f(\tau)$. Applying the weighting function and integrating over all Debye models (\ref{eqChiOmegaDebye}), the soil's magnetic susceptibility is expressed as \cite{Dabas1992,Mullins1973,Pasion2007}:
+where $k_B$ is the Boltzmann constant, $T$ is the absolute temperature, and $\tau_0 \sim 10^{-9}$ s is the "attempt time". $E_b$ represents the energy barriers that maintain the pre-existing orientations of individual SP grains. In natural soils, $E_b$ is not the same for all SP grains, and instead forms a distribution. By Eq. (\ref{eqNeelRelaxationTime}), lateritic soils are characterized by a distribution of time-relaxation constants that is represented using a weighting function $f(\tau)$. Applying the weighting function and integrating over all Debye models (\ref{eqChiOmegaDebye}), the soil's magnetic susceptibility is expressed as \citep{Dabas1992,Mullins1973,Pasion2007}:
 \begin{equation}
 \chi(\omega) = \chi_\infty + \Delta \chi \int_0^\infty \frac{f(\tau)}{1 + i \omega \tau} d\tau
 \label{eqChiWeightedIntegral}
 \end{equation}
 
-The majority of lateritic soil samples can be adequately fit by assuming a log-uniform distribution of time-relaxation constants between a set of finite limits $[\tau_1, \tau_2]$ \cite{Dabas1992,Mullins1973,Worm1998,Igel2012}. The weighting function for a log-uniform distribution of time-relaxation constants is defined by \cite{Dabas1992,Mullins1973,Billings2003,Das2006}:
+The majority of lateritic soil samples can be adequately fit by assuming a log-uniform distribution of time-relaxation constants between a set of finite limits $[\tau_1, \tau_2]$ \citep{Dabas1992,Mullins1973,Worm1998,Igel2012}. The weighting function for a log-uniform distribution of time-relaxation constants is defined by \citep{Dabas1992,Mullins1973,Billings2003,Das2006}:
 \begin{equation}
 \label{eqLogDistribution}
 f({\tau}) =
@@ -234,16 +234,16 @@ Eq. (\ref{eqChiOmega}) represents an appropriate frequency-dependent magnetic su
 
 \subsection{Viscous Remanent Magnetization in Response to Step-Off Excitation}
 
-Consider a step-off excitation where a DC field $\vec H_0$, which has been applied to a magnetically viscous sample since $t = -\infty$, is suddenly removed at $t=0$. In this case, the resulting magnetic relaxation at $t >0$ can be expressed as \cite{Neel1949,Billings2003,Pasion2007}:
+Consider a step-off excitation where a DC field $\vec H_0$, which has been applied to a magnetically viscous sample since $t = -\infty$, is suddenly removed at $t=0$. In this case, the resulting magnetic relaxation at $t >0$ can be expressed as \citep{Neel1949,Billings2003,Pasion2007}:
 \begin{equation}
 \vec M(t) = \Delta \chi \vec H_0 F(t)
 \label{eqMagSte}
 \end{equation}
-where $F(t)$ is referred to as the after-effect function. If all SP grains are characterized by an identical time-relaxation constant $\tau$, then the after-effect function is given by \cite{Neel1949,Billings2003,Pasion2007}:
+where $F(t)$ is referred to as the after-effect function. If all SP grains are characterized by an identical time-relaxation constant $\tau$, then the after-effect function is given by \citep{Neel1949,Billings2003,Pasion2007}:
 \begin{equation}
 F (t) = e^{-t/\tau}. \label{afterEffect1}
 \end{equation}
-For a distribution of time-relaxation constants, Eq. (\ref{afterEffect1}) becomes \cite{Neel1949,Mullins1973,Billings2003,Pasion2007}:
+For a distribution of time-relaxation constants, Eq. (\ref{afterEffect1}) becomes \citep{Neel1949,Mullins1973,Billings2003,Pasion2007}:
 \begin{equation}
 \label{eqWeightedIntegral} F(t) = \int^{\infty}_0 f(\tau)
 e^{-t/\tau} d \tau,
@@ -288,7 +288,7 @@ We see that Eqs. (\ref{eqAfterEffectB}) and (\ref{eqAfterEffectdBdt}) describe t
 \section{General Formulation of the VRM Response in the Absence of Self-Demagnetization}
 \label{secSelfDemag}
 
-In the absence of self-demagnetization,  the magnetic anomaly observed outside a magnetized body can be expressed using the following dyadic Green's function \cite{Blakely1996}:
+In the absence of self-demagnetization,  the magnetic anomaly observed outside a magnetized body can be expressed using the following dyadic Green's function \citep{Blakely1996}:
 \begin{equation}
 \vec B(\vec r,t) = \frac{\mu_0}{4 \pi} \int_{V} \nabla \nabla \frac{1}{| \vec r - \vec r_s |} \cdot \vec M(\vec r_s, t) \, dV_s
 \label{Bfield}
@@ -336,15 +336,14 @@ B^{(0)}_\rho (\rho,z) \! = \! -\frac{\mu_0 Ia}{2} \Bigg ( \frac{\Delta \chi}{2+\
 \end{equation}
 where $I$ is the steady-state current, $\Delta \chi$ is the static magnetic susceptibility due to the SP effects of the half-space,  $\mu_0 = 4\pi \times 10^{-7}$ H/m is the permeability of free-space, $\rho$ is the radial distance from the loop's center axis, and $z$ is the observation height above the surface. $J_0(\cdot)$ and $J_1(\cdot)$ are 0\textsuperscript{th} and 1\textsuperscript{st} order Bessel functions of the first kind, respectively. Note that we are neglecting the primary field contributions for equations found in \cite{Ward1988}.
 
-We see that even for the static case, the vertical and radial components of $\vec B^{(0)}(\vec r)$ involve solutions to complicated Hankel transforms in Eqs. (\ref{eqBzMagnetostatic}) and (\ref{eqBrhoMagnetostatic}). Their general solutions have to be obtained via numerical integrations \cite{vanDam20
-04, vanDam2005}. However, for several cases of interest considered in sections \ref{secVertical} and \ref{secRadial}, we can derive analytic solutions or approximate solutions for both the vertical component $B_z(\rho,z)$ and radial component $B_\rho (\rho,z)$.
+We see that even for the static case, the vertical and radial components of $\vec B^{(0)}(\vec r)$ involve solutions to complicated Hankel transforms in Eqs. (\ref{eqBzMagnetostatic}) and (\ref{eqBrhoMagnetostatic}). Their general solutions have to be obtained via numerical integrations \citep{vanDam2004, vanDam2005}. However, for several cases of interest considered in sections \ref{secVertical} and \ref{secRadial}, we can derive analytic solutions or approximate solutions for both the vertical component $B_z(\rho,z)$ and radial component $B_\rho (\rho,z)$.
 
 
 %============================================================
 %       NEW SUBSECTION: VERTICAL MAGNETOSTATIC RESPONSE
 %============================================================
 
-\subsection{Vertical Static Response for a Circular Transmitter Loop over a Superparamagnetic Half-space} \label{secVertical} To solve the integral in Eq. (\ref{eqBzMagnetostatic}), we introduce the following identity \cite{Erdelyi1954}:
+\subsection{Vertical Static Response for a Circular Transmitter Loop over a Superparamagnetic Half-space} \label{secVertical} To solve the integral in Eq. (\ref{eqBzMagnetostatic}), we introduce the following identity \citep{Erdelyi1954}:
 \begin{equation}
 \begin{split}
 \int^{\infty}_0 \lambda &e^{-\lambda (z+h)} J_1(\lambda a) J_0 (\lambda \rho) d \lambda \\
@@ -354,7 +353,8 @@ We see that even for the static case, the vertical and radial components of $\ve
 \end{equation}
 A general analytical solution to Eq. (\ref{eqIntSolJ1J0}) is difficult to derive. For several special cases however, working with the right-hand side of the equation enables us to obtain some insightful field expressions.
 \\\\
-\subsubsection{Large Circular Loop on the Earth's Surface ($h=0$)} Assume that the static response is examined close to the Earth's surface ($z \rightarrow 0$). With Wolfram Mathematica's online integration code \cite{Wolfram2016}, the right-hand side of Eq. (\ref{eqIntSolJ1J0}) for $h,z = 0$ can be expressed analytically, i.e.,
+\subsubsection{Large Circular Loop on the Earth's Surface ($h=0$)}
+Assume that the static response is examined close to the Earth's surface ($z \rightarrow 0$). With Wolfram Mathematica's online integration code \citep{Wolfram2016}, the right-hand side of Eq. (\ref{eqIntSolJ1J0}) for $h,z = 0$ can be expressed analytically, i.e.,
 \begin{align}
 \lim_{z \rightarrow 0} \int^{\infty}_0 \lambda e^{-\lambda z} &J_1(\lambda a) J_0 (\lambda \rho) d \lambda \nonumber \\
 \label{eqIntSolJ1J0b} &= \frac{2 }{\pi a} \frac{1}{\sqrt{a^2-\rho^2}} E \Bigg [ \frac{\rho^2}{\rho^2 - a^2} \Bigg ],
@@ -446,9 +446,9 @@ Now we look at the radial static response from a circular transmitter loop over 
 \int^{\infty}_0 \lambda e^{-\lambda (z+h)} J_1(\lambda a) J_1
 (\lambda \rho) d \lambda. \label{eqHankelJ1J1Int}
 \end{equation}
-Although analytic solutions for Eq. (\ref{eqHankelJ1J1Int}) exist \cite{Erdelyi1954}, they are too complicated to develop straightforward relationships with respect to the transmitter loop radius and observation locations. However for the special cases considered below, we can have an approximate solution.
+Although analytic solutions for Eq. (\ref{eqHankelJ1J1Int}) exist \citep{Erdelyi1954}, they are too complicated to develop straightforward relationships with respect to the transmitter loop radius and observation locations. However for the special cases considered below, we can have an approximate solution.
 
-First, let us examine the behavior of Eq. (\ref{eqHankelJ1J1Int}). For $z+h>0$, we used the IIPBF adaptive quadrature package \cite{Ratnanather2011} to evaluate the expression. Fig. \ref{figHankelJ1J1Int} shows the results for several values of $z+h$ for a loop of radius $a = 20$ m. We observed that for $0 <z+h \leq a/5$, the numerical solutions w.r.t $\rho$ behaved like a Cauchy distribution centered around $\rho = a$. As $z+h$ is decreased over the accepted range, the distribution became narrow. Therefore invoking the probability density function for a Cauchy distribution, we proposed a heuristic approximation to Eq. (\ref{eqHankelJ1J1Int}) as:
+First, let us examine the behavior of Eq. (\ref{eqHankelJ1J1Int}). For $z+h>0$, we used the IIPBF adaptive quadrature package \citep{Ratnanather2011} to evaluate the expression. Fig. \ref{figHankelJ1J1Int} shows the results for several values of $z+h$ for a loop of radius $a = 20$ m. We observed that for $0 <z+h \leq a/5$, the numerical solutions w.r.t $\rho$ behaved like a Cauchy distribution centered around $\rho = a$. As $z+h$ is decreased over the accepted range, the distribution became narrow. Therefore invoking the probability density function for a Cauchy distribution, we proposed a heuristic approximation to Eq. (\ref{eqHankelJ1J1Int}) as:
 \begin{equation}
 \int_0^\infty \!\!\!\! \lambda e^{-\lambda (z+h)} J_1 (\lambda a)
 J_0 (\lambda \rho ) d\lambda \!\sim\! \Bigg [ \pi a \gamma \Bigg ( 1
@@ -464,7 +464,7 @@ One sees that in Fig. \ref{figHankelJ1J1Int}, the results from Eq. (\ref{eqCauch
 \begin{equation}
 \lim_{z+h \rightarrow 0} \int^{\infty}_0 \!\!\! \lambda e^{-\lambda (z+h)} J_1(\lambda a) J_1 (\lambda \rho) d \lambda = \frac{\delta (a - \rho)}{a},
 \end{equation}
-which can be shown with the weighted orthogonality property of the Hankel transform \cite{Wong2008}.
+which can be shown with the weighted orthogonality property of the Hankel transform \citep{Wong2008}.
 
 By combining Eqs. (\ref{eqCauchyDistr}) and (\ref{eqBrhoMagnetostatic}), the radial static response of the SP half-space for $0 <z+h \leq a/5$ is approximated by
 \begin{equation}
@@ -530,9 +530,10 @@ F(t)}{dt}.
 \label{eqVRMdBzdt}
 \end{equation}
 
-Both Eqs. (\ref{eqVRMBz}) and (\ref{eqVRMdBzdt}) reveal that the vertical VRM response depends upon the ratio of $\rho/a$. When an observation is made towards the center of a loop (say $\rho/a \leq 0.5$), the response tends to be small and vary minimally with respect to $\rho$. This agrees with the results obtained by others \cite{Buselli1982,Barsukov2001}. When an observation is made towards the edges of the loop, the VRM response can increase in magnitude rapidly as $\rho$ increases and $\rho/a \rightarrow 1$. Fig. \ref{figVRMrespZ} shows the variation in the VRM response when $\rho = 0 ~{\rm m}, 10 ~{\rm m}, 18 ~{\rm m}$ for a loop of radius $a=20$ m. Meanwhile, the results of Eqs. (\ref{eqVRMBz}) and (\ref{eqVRMdBzdt}) match well with those computed using the 1D numerical code-EM1DTM \cite{EM1DTM}. In practice, measurements of $B$ or $\partial B/\partial t$ are not acquired directly on the Earth's surface. Instead, data are typically collected at heights less than 1 m off the ground. Therefore for a near-surface survey with a sufficiently large loop, we should expect similar behaviour to the case above when $a \gg z$.
+Both Eqs. (\ref{eqVRMBz}) and (\ref{eqVRMdBzdt}) reveal that the vertical VRM response depends upon the ratio of $\rho/a$. When an observation is made towards the center of a loop (say $\rho/a \leq 0.5$), the response tends to be small and vary minimally with respect to $\rho$. This agrees with the results obtained by others \citep{Buselli1982,Barsukov2001}. When an observation is made towards the edges of the loop, the VRM response can increase in magnitude rapidly as $\rho$ increases and $\rho/a \rightarrow 1$. Fig. \ref{figVRMrespZ} shows the variation in the VRM response when $\rho = 0 ~{\rm m}, 10 ~{\rm m}, 18 ~{\rm m}$ for a loop of radius $a=20$ m. Meanwhile, the results of Eqs. (\ref{eqVRMBz}) and (\ref{eqVRMdBzdt}) match well with those computed using the 1D numerical code-EM1DTM \cite{EM1DTM}. In practice, measurements of $B$ or $\partial B/\partial t$ are not acquired directly on the Earth's surface. Instead, data are typically collected at heights less than 1 m off the ground. Therefore for a near-surface survey with a sufficiently large loop, we should expect similar behaviour to the case above when $a \gg z$.
 \\
-\subsubsection{Response Along the Transmitter's Vertical Axis ($\rho = 0$)} Using expressions (\ref{eqAfterEffectB}),  (\ref{eqGenVRMB}), and (\ref{eqStaticCoinBz}), we have the VRM response at time $\tau_1 \ll t \ll \tau_2$
+\subsubsection{Response Along the Transmitter's Vertical Axis ($\rho = 0$)}
+Using expressions (\ref{eqAfterEffectB}),  (\ref{eqGenVRMB}), and (\ref{eqStaticCoinBz}), we have the VRM response at time $\tau_1 \ll t \ll \tau_2$
 \begin{equation}
 \label{eqCoinB} B_z(0,z,t)  \approx \frac{\mu_0 m}{2
 \pi} \Bigg ( \frac{\Delta \chi}{2 + \Delta \chi} \Bigg ) \Bigg (
@@ -545,7 +546,7 @@ B_z(0,z,t)}{\partial t}  \approx \frac{\mu_0 m}{2 \pi} \Bigg (
 \frac{\Delta \chi}{2 + \Delta \chi} \Bigg ) \Bigg ( \frac{1}{(z+h)^2
 + a^2} \Bigg )^{3/2} \frac{d \bar F(t)}{dt}.
 \end{equation}
-Eqs. (\ref{eqCoinB}) and (\ref{eqCoindBdt}) show that the VRM response becomes smaller in magnitude when the size of the loop or the total elevation of $z+h$ increases. This matches analytic results and field observations made by others \cite{Lee1984,Buselli1982,Barsukov2001}. For a dipole source ($a\ll z+h$), the magnitude of the VRM response is proportional to $(z+h)^{-3}$. For $z+h=0$ and $m=\pi a^2 I$, expressions (\ref{eqCoinB}) and (\ref{eqCoindBdt}) are equivalent to expressions (\ref{eqVRMBz}) and (\ref{eqVRMdBzdt}) at $\rho=0$. The VRM response observed for a loop of radius $a=0.2$ m is shown in Fig. \ref{figVRMrespCoin} when $z + h = 1 ~{\rm m}, 2 ~{\rm m}, 4 ~{\rm m}$. Again, both the analytical and numerical results agree well.
+Eqs. (\ref{eqCoinB}) and (\ref{eqCoindBdt}) show that the VRM response becomes smaller in magnitude when the size of the loop or the total elevation of $z+h$ increases. This matches analytic results and field observations made by others \citep{Lee1984,Buselli1982,Barsukov2001}. For a dipole source ($a\ll z+h$), the magnitude of the VRM response is proportional to $(z+h)^{-3}$. For $z+h=0$ and $m=\pi a^2 I$, expressions (\ref{eqCoinB}) and (\ref{eqCoindBdt}) are equivalent to expressions (\ref{eqVRMBz}) and (\ref{eqVRMdBzdt}) at $\rho=0$. The VRM response observed for a loop of radius $a=0.2$ m is shown in Fig. \ref{figVRMrespCoin} when $z + h = 1 ~{\rm m}, 2 ~{\rm m}, 4 ~{\rm m}$. Again, both the analytical and numerical results agree well.
 %---------------------------------------
 %       FIGURE
 %---------------------------------------
@@ -591,7 +592,7 @@ And using expressions (\ref{eqAfterEffectdBdt}), (\ref{eqGenVRMB}) and (\ref{eqM
 \frac{d \bar F}{dt}.
 \label{eqGaussiandBdt}
 \end{equation}
-Eqs. (\ref{eqGaussianB}) and (\ref{eqGaussiandBdt}) describe how the geometrical parameters can affect the response, although they are a bit more complicated than the expressions for the vertical component. Near the center of the loop, one can see that the radial component of the VRM response is small. As observations are made closer to the transmitter wire, the radial component of the VRM response increases significantly. Recall that $\gamma$ given by Eq. (\ref{eqGamma}) is a function of $z+h$. Therefore, the effect of raising the receiver off the ground can be generated by raising the transmitter off the ground. This effect was observed during field observations for various SiroTEM configurations \cite{Buselli1982}.
+Eqs. (\ref{eqGaussianB}) and (\ref{eqGaussiandBdt}) describe how the geometrical parameters can affect the response, although they are a bit more complicated than the expressions for the vertical component. Near the center of the loop, one can see that the radial component of the VRM response is small. As observations are made closer to the transmitter wire, the radial component of the VRM response increases significantly. Recall that $\gamma$ given by Eq. (\ref{eqGamma}) is a function of $z+h$. Therefore, the effect of raising the receiver off the ground can be generated by raising the transmitter off the ground. This effect was observed during field observations for various SiroTEM configurations \citep{Buselli1982}.
 
 Figs. \ref{figVRMrespBrho} and \ref{figVRMrespdBrhodt} shows the radial VRM response for $\rho = 10 ~{\rm m}, 15 ~{\rm m}, 18 ~{\rm m}$ given a loop of radius $a=20$ m and $z+h = 1$ m. The analytical and the EM1DTM results overlap well. Similar to the vertical components, the VRM response of $B_\rho (t)$ decays in $\ln (t)$, and $\partial B_\rho / \partial t$ decays in $1/t$.
 %---------- -----------------------------
@@ -625,7 +626,7 @@ Figs. \ref{figVRMrespBrho} and \ref{figVRMrespdBrhodt} shows the radial VRM resp
 \section{Response over a Conductive and Magnetically Viscous Half-Space}
 \label{secEMversusVRM}
 
-The magnetic susceptibilities of lateritic soils are generally low ($\chi < 0.01$) \cite{vanDam2004,vanDam2005,Druyts2009}; as such, the magnetic properties of lateritic soils do not have a significant impact on the inductive response. Some studies showed that effects of conductivity may be neglected when considering the soil's VRM response \cite{Billings2003,Druyts2009,Das2006}. Some have suggested that the inductive and VRM responses from lateritic soils are approximately separable \cite{Pasion2007,Buselli1982,Das2006}. In this section, we will test this assumption using the 1D numerical modeling code (EM1DTM) \cite{EM1DTM} over a half-space model. Given that the inductive and VRM responses are separable, we present the critical time analysis by comparing the vertical inductive and VRM responses with respect to the loop's radius and observation distances.
+The magnetic susceptibilities of lateritic soils are generally low ($\chi < 0.01$) \citep{vanDam2004,vanDam2005,Druyts2009}; as such, the magnetic properties of lateritic soils do not have a significant impact on the inductive response. Some studies showed that effects of conductivity may be neglected when considering the soil's VRM response \citep{Billings2003,Druyts2009,Das2006}. Some have suggested that the inductive and VRM responses from lateritic soils are approximately separable \citep{Pasion2007,Buselli1982,Das2006}. In this section, we will test this assumption using the 1D numerical modeling code (EM1DTM) \citep{EM1DTM} over a half-space model. Given that the inductive and VRM responses are separable, we present the critical time analysis by comparing the vertical inductive and VRM responses with respect to the loop's radius and observation distances.
 
 
 
@@ -635,7 +636,7 @@ The magnetic susceptibilities of lateritic soils are generally low ($\chi < 0.01
 
 
 \subsection{Separation of Inducitve and VRM responses}
-\label{secSeparable} Consider a conductive and magnetically viscous half-space with $\sigma = 0.01$ S/m, $\chi_\infty = 0$, $\Delta \chi = 0.001$, $\tau_1 = 10^{-8}$ s and $\tau_2 = 10$ s. Fig. \ref{figVRMrespZadd} shows the inductive, the VRM , and the total transient responses computed by EM1DTM for a loop of radius $a=20$ m on the surface. One sees that for the vertical and radial components after sufficient time, the observed response becomes dominated by the VRM response; whereas the early times appear to be dominated by the inductive response. The numerical results verify that the total response for a conductive and magnetically viscous Earth can be well approximated as the sum of the individual inductive and VRM responses and support the observations made by \cite{vanDam2004, vanDam2005,Druyts2009, Billings2003,Das2006,Pasion2007,Buselli1982}. Overall, we found that for sufficiently small DC susceptibilities ($\chi_\infty + \Delta \chi < 0.01$), inductive and VRM responses could be predicted independently. For larger values of $\chi_\infty + \Delta \chi$, magnetic properties can affect the inductive response. On the other hand, the VRM response was insensitive to changes to the half-space conductivity. Bear in mind that the value of $\chi_\infty$ has no effect on the VRM response as the contribution made by instantaneous magnetization during the off-time is zero.
+\label{secSeparable} Consider a conductive and magnetically viscous half-space with $\sigma = 0.01$ S/m, $\chi_\infty = 0$, $\Delta \chi = 0.001$, $\tau_1 = 10^{-8}$ s and $\tau_2 = 10$ s. Fig. \ref{figVRMrespZadd} shows the inductive, the VRM , and the total transient responses computed by EM1DTM for a loop of radius $a=20$ m on the surface. One sees that for the vertical and radial components after sufficient time, the observed response becomes dominated by the VRM response; whereas the early times appear to be dominated by the inductive response. The numerical results verify that the total response for a conductive and magnetically viscous Earth can be well approximated as the sum of the individual inductive and VRM responses and support the observations made by \citep{vanDam2004, vanDam2005,Druyts2009, Billings2003,Das2006,Pasion2007,Buselli1982}. Overall, we found that for sufficiently small DC susceptibilities ($\chi_\infty + \Delta \chi < 0.01$), inductive and VRM responses could be predicted independently. For larger values of $\chi_\infty + \Delta \chi$, magnetic properties can affect the inductive response. On the other hand, the VRM response was insensitive to changes to the half-space conductivity. Bear in mind that the value of $\chi_\infty$ has no effect on the VRM response as the contribution made by instantaneous magnetization during the off-time is zero.
 
 %---------------------------------------
 %       FIGURE
@@ -672,7 +673,7 @@ The magnetic susceptibilities of lateritic soils are generally low ($\chi < 0.01
 
 \subsection{Estimating the Cross-Over Time of VRM Responses}
 \label{secIndVsVRM}
-Nabighian \cite{Nabighian1979} showed that for a step-off excitation, to first-order, the quasi-static inductive response within a large circular transmitter loop on the surface of a conductive half-space would approach the following expression asymptotically after sufficient time:
+\cite{Nabighian1979} showed that for a step-off excitation, to first-order, the quasi-static inductive response within a large circular transmitter loop on the surface of a conductive half-space would approach the following expression asymptotically after sufficient time:
 \begin{equation}
 \label{eqKaufmanB}
 B_z(t) \approx \frac{I \sigma^{3/2} \mu_0^{5/2} a^2}{30 \sqrt{\pi}} t^{-3/2}
@@ -786,9 +787,9 @@ Figs. \ref{figEMandVRMrespLoops} and \ref{figEMandVRMrespOffAxis} demonstrate ho
 %======================================================
 
 \section{Conclusion}
-In this paper, we have presented the analytical formulae for the transient VRM response generated by a large circular loop over a magnetically viscous half-space for a step-off excitation. Assuming that the soil's magnetic viscosity is represented by a collection of non-interacting SP grains \cite{Neel1949} and that magnetic fields are governed by the magnetostatic law, we can express the VRM response and its derivatives as the product of a static field and an after-effect time function. We approximated the true after-effect function of the half-space by using a log-uniform distribution of time-relaxation constants to characterize the magnetic viscosity. As for the static fields, we derived the associated expressions by simplifying and approximating Hankel integrals for the vertical and radial field components. Analytic expressions were verified with the 1D forward modelling code \cite{EM1DTM}. Both analytical and numerical results showed excellent agreement for sufficiently small magnetic susceptibilities.
+In this paper, we have presented the analytical formulae for the transient VRM response generated by a large circular loop over a magnetically viscous half-space for a step-off excitation. Assuming that the soil's magnetic viscosity is represented by a collection of non-interacting SP grains \citep{Neel1949} and that magnetic fields are governed by the magnetostatic law, we can express the VRM response and its derivatives as the product of a static field and an after-effect time function. We approximated the true after-effect function of the half-space by using a log-uniform distribution of time-relaxation constants to characterize the magnetic viscosity. As for the static fields, we derived the associated expressions by simplifying and approximating Hankel integrals for the vertical and radial field components. Analytic expressions were verified with the 1D forward modelling code \citep{EM1DTM}. Both analytical and numerical results showed excellent agreement for sufficiently small magnetic susceptibilities.
 
-Our analytic expressions explicitly reveal how the VRM response depends upon geometric survey properties such as the transmitter loop's size and the observation location within the loop. For vertical VRM responses measured near the surface, the ratio of $\rho/a$ plays a major role in controlling the magnitude. When $\rho/a \rightarrow 1$, i.e., an observation is made towards the edge of the loop, VRM responses can increase significantly. Equivalently, strong VRM responses are expected for a smaller transmitter loops. For measurements along the axis of the loop, the vertical VRM response  can be diminished by either increasing the sensor height or increasing the size of the loop. For radial VRM responses, our empirical approximation predicts that it is small near the center of the loop. As observations are made closer to the transmitter wire, the increased strength of radial VRM response can be damped by increasing the sensor height. Characteristics of the VRM response uncovered in the analytical expressions are consistent with other field observations and numerical modeling results \cite{Buselli1982, Barsukov2001, Billings2003, Kozhevnikov2007,Pasion2007, Zadorozhnaya2012}.
+Our analytic expressions explicitly reveal how the VRM response depends upon geometric survey properties such as the transmitter loop's size and the observation location within the loop. For vertical VRM responses measured near the surface, the ratio of $\rho/a$ plays a major role in controlling the magnitude. When $\rho/a \rightarrow 1$, i.e., an observation is made towards the edge of the loop, VRM responses can increase significantly. Equivalently, strong VRM responses are expected for a smaller transmitter loops. For measurements along the axis of the loop, the vertical VRM response  can be diminished by either increasing the sensor height or increasing the size of the loop. For radial VRM responses, our empirical approximation predicts that it is small near the center of the loop. As observations are made closer to the transmitter wire, the increased strength of radial VRM response can be damped by increasing the sensor height. Characteristics of the VRM response uncovered in the analytical expressions are consistent with other field observations and numerical modeling results \citep{Buselli1982, Barsukov2001, Billings2003, Kozhevnikov2007,Pasion2007, Zadorozhnaya2012}.
 
 Furthermore, we have suggested an estimate of the cross-over time from which the response might be divided into earlyinductive and late VRM stages. Increasing the size of a loop can push the cross-over time to a later time. On the other hand, a near loop-edge observation tends to have an early cross-over time. Also, we found that the VRM response impacts on the magnetic flux density $B(t)$ at much earlier times than on its time derivative $dB/dt$. Therefore in regions where lateritic soils are prominent, it may not be recommended to use TEM systems that only measure the magnetic flux density; which are potentially contaminated by the VRM signal across a larger number of time channels.
 
