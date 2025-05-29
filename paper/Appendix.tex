@@ -2,9 +2,7 @@
 \setcounter{equation}{0}
 \numberwithin{equation}{section}
 
-We wish to solve expression (\ref{eqRB}) for $R_B=1$ to obtain
-expression (\ref{eqtalpha}).  This is equivalent to solving an
-expression of the form:
+We wish to solve expression (\ref{eqRB}) for $R_B=1$ to obtain expression (\ref{eqtalpha}).  This is equivalent to solving an expression of the form:
 \begin{equation}
 \label{eqLnPoly} A t^{-3/2} + \ln t \approx -\gamma + \ln \tau_2,
 \end{equation}
@@ -14,22 +12,17 @@ where
 \sqrt{\pi}} \! \Bigg ( \frac{2+\Delta \chi}{\Delta \chi} \Bigg )
 (\mu_0 \sigma)^{3/2} a^3.
 \end{equation}
-Changing the variable $u=t^{-3/2}$, and with some algebra, we can
-rewrite Eq. (\ref{eqLnPoly}) as
+Changing the variable $u=t^{-3/2}$, and with some algebra, we can rewrite Eq. (\ref{eqLnPoly}) as
 \begin{equation}
 \label{eqVarChange} - \frac{3}{2} A u e^{- \frac{3}{2} A u} \approx
 - \frac{3}{2} A e^{\frac{3}{2} (\gamma - \ln \tau_2)}.
 \end{equation}
-Solutions to an expression of the form $x e^x = C$ are defined as
-branches of the  Lambert W function $W[n,C]$, where $n$ are integer
-values \cite{Corless1996}. Therefore, the solutions $u_n$ to Eq.
-(\ref{eqVarChange}) are
+Solutions to an expression of the form $x e^x = C$ are defined as branches of the  Lambert W function $W[n,C]$, where $n$ are integer
+values \cite{Corless1996}. Therefore, the solutions $u_n$ to Eq. (\ref{eqVarChange}) are
 \begin{equation}
-u_n \approx - \frac{2}{3A} W \Big [ n, - \frac{3}{2} A
-e^{\frac{3}{2}(\gamma - \ln \tau_2)} \Big ]
+u_n \approx - \frac{2}{3A} W \Big [ n, - \frac{3}{2} A e^{\frac{3}{2}(\gamma - \ln \tau_2)} \Big ]
 \end{equation}
-We can use Eqs. (\ref{eqtbeta}) and (\ref{eqA}) to
-show $A = \frac{2}{3} t_\beta^{3/2}$. By replacing $u_n =
+We can use Eqs. (\ref{eqtbeta}) and (\ref{eqA}) to show $A = \frac{2}{3} t_\beta^{3/2}$. By replacing $u_n =
 t_n^{-3/2}$:
 \begin{align}
 &t_n^{-3/2} \approx - t_\beta^{-3/2} W \Big [ n, - t_\beta^{3/2} e^{\frac{3}{2}(\gamma - \ln \tau_2)} \Big ] \nonumber \\
@@ -37,28 +30,15 @@ t_n^{-3/2}$:
 \implies \; \; &t_n \approx t_\beta \Bigg ( - W \Bigg [ n, - \Big ( \frac{t_\beta}{\tau_2} e^\gamma \Big )^{3/2} \Bigg ] \Bigg )^{-2/3}
 \end{align}
 
-Real-valued solutions $W[n,x]$ only exist for
-$n=-1,0$ \cite{Corless1996}.  Additionally, for $t_n$ to occur after
-the primary field has been removed ($t_n \geq 0$), $W [n,x]$
-requires $-1/e \leq x \leq 0$. Thus, by Eq. (\ref{eqWsol}):
+Real-valued solutions $W[n,x]$ only exist for $n=-1,0$ \cite{Corless1996}.  Additionally, for $t_n$ to occur after
+the primary field has been removed ($t_n \geq 0$), $W [n,x]$ requires $-1/e \leq x \leq 0$. Thus, by Eq. (\ref{eqWsol}):
 \begin{align}
 & -1/e \leq - \Big ( \frac{t_\beta}{\tau_2}e^\gamma \Big )^{3/2} \leq 0 \nonumber \\
 \label{eqWcond}
 \implies & e^{-\frac{2}{3}-\gamma} \approx 0.288267 \geq \frac{t_\beta}{\tau_2} \geq 0
 \end{align}
 
-Recall that our choice in after-effect function
-(\ref{eqAfterEffectB})  is only valid for $\tau_1 \ll t \ll \tau_2$.
-Therefore, the condition defined in expression (\ref{eqWcond}) is
-reasonable under the assumption that $t_\beta \ll \tau_2$. We
-evaluated Eq. (\ref{eqWsol}) for $n=0$ and noticed the solutions were
-$t_0 \not \ll \tau_2$. This violates our conditions for the
-after-effect function and is therefore not a valid solution. On the other hand, solutions of Eq.
-(\ref{eqWsol}) for $n=-1$ did not violate
-conditions for the after-effect function. The solutions
-obtained using $W[-1,x]$ consistently showed $t_\alpha \leq
-t_\beta$. As a result, the time $t_\alpha$ which solves $R_B=1$ in
-expression (\ref{eqRB}) is given by:
+Recall that our choice in after-effect function (\ref{eqAfterEffectB})  is only valid for $\tau_1 \ll t \ll \tau_2$. Therefore, the condition defined in expression (\ref{eqWcond}) is reasonable under the assumption that $t_\beta \ll \tau_2$. We evaluated Eq. (\ref{eqWsol}) for $n=0$ and noticed the solutions were $t_0 \not \ll \tau_2$. This violates our conditions for the after-effect function and is therefore not a valid solution. On the other hand, solutions of Eq. (\ref{eqWsol}) for $n=-1$ did not violate conditions for the after-effect function. The solutions obtained using $W[-1,x]$ consistently showed $t_\alpha \leq t_\beta$. As a result, the time $t_\alpha$ which solves $R_B=1$ in expression (\ref{eqRB}) is given by:
 %\setcounter{equation}{50}
 \begin{equation} t_\alpha \approx  t_\beta \Bigg ( -
 W \Bigg [ - \! 1, - \Big  ( \frac{t_\beta}{\tau_2} e^\gamma \Big
