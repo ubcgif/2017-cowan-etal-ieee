@@ -151,10 +151,7 @@ To effectively characterize the impact of viscous remanent magnetization (VRM) o
 \end{abstract}
 
 % Note that keywords are not uniformly used for peerreview papers.
-\begin{IEEEkeywords}
-Viscous remanent magnetization, magnetic soil, inductive response, a circular loop, cross-over time, TEM systems.
-\end{IEEEkeywords}
-
+%{\bf Keywords:} Viscous remanent magnetization, magnetic soil, inductive response, a circular loop, cross-over time, TEM systems.
 
 
 %=======================================================
@@ -302,14 +299,16 @@ where $r$ is the location of observation, $r_s$ are locations within the volume 
 For a step-off excitation, we can use Eq. (\ref{eqMagSte})  to represent the total magnetization at any location within a magnetically viscous Earth at $t > 0$. This is because any instantaneous magnetization attributed to $\chi_\infty$ is zero during the off-time. In most cases, we can expect $\Delta \chi(\vec r_s)$ and the inducing field $\vec H_0(\vec r_s)$ to varyspatially. If the spatial distribution of time-relaxation constants defined in expression (\ref{eqLogDistribution}) is uniform everywhere within the magnetically viscous Earth, the after-effect function $F(t)$ is spatially invariant and can be taken outside of the integral in Eq. (\ref{Bfield}), which becomes
 \begin{align}
 \vec B(\vec r,t) &= \frac{\mu_0}{4 \pi} F(t) \int_V \nabla \nabla \frac{1}{| \vec r - \vec r_s |} \cdot \Delta \chi(\vec r_s) \, \vec H_0(\vec r_s) \, dV \nonumber \\
-&= \vec B^{(0)} (\vec r) F(t), \label{eqGenVRMB}
+&= \vec B^{(0)} (\vec r) F(t),
+\label{eqGenVRMB}
 \end{align}
 where $\vec B^{(0)}(\vec r)$ defines  the static magnetic response of all SP grains.
 \\\\
 By taking the derivative of Eq. (\ref{eqGenVRMB}):
 \begin{align}
 \frac{\partial \vec B(\vec r,t)}{\partial t} &= \frac{\mu_0}{4 \pi} \frac{d F(t)}{dt} \int_V \nabla \nabla \frac{1}{| \vec r - \vec r_s |} \cdot \Delta \chi(\vec r_s) \, \vec H_0(\vec r_s) \, dV \nonumber \\
-&= \vec B^{(0)} (\vec r) \frac{d F(t)}{dt}. \label{eqGenVRMdBdt}
+&= \vec B^{(0)} (\vec r) \frac{d F(t)}{dt}.
+\label{eqGenVRMdBdt}
 \end{align}
 Thus if $\vec B^{(0)}(\vec r)$ is known, the pairs of Eqs. (\ref{eqIntDist}) and (\ref{eqGenVRMB}), Eqs. (\ref{eqAfterEffectdBdt1}) and (\ref{eqGenVRMdBdt}) can be used to predict $\vec B(\vec r,t)$ and $\frac{\partial \vec B(\vec r,t)}{\partial t}$ for the VRM response at $t > 0$. Next we present analytic expressions for $\vec B^{(0)} (\vec r)$.
 
@@ -337,7 +336,8 @@ B^{(0)}_\rho (\rho,z) \! = \! -\frac{\mu_0 Ia}{2} \Bigg ( \frac{\Delta \chi}{2+\
 \end{equation}
 where $I$ is the steady-state current, $\Delta \chi$ is the static magnetic susceptibility due to the SP effects of the half-space,  $\mu_0 = 4\pi \times 10^{-7}$ H/m is the permeability of free-space, $\rho$ is the radial distance from the loop's center axis, and $z$ is the observation height above the surface. $J_0(\cdot)$ and $J_1(\cdot)$ are 0\textsuperscript{th} and 1\textsuperscript{st} order Bessel functions of the first kind, respectively. Note that we are neglecting the primary field contributions for equations found in \cite{Ward1988}.
 
-We see that even for the static case, the vertical and radial components of $\vec B^{(0)}(\vec r)$ involve solutions to complicated Hankel transforms in Eqs. (\ref{eqBzMagnetostatic}) and (\ref{eqBrhoMagnetostatic}). Their general solutions have to be obtained via numerical integrations \cite{vanDam2004, vanDam2005}. However, for several cases of interest considered in sections \ref{secVertical} and \ref{secRadial}, we can derive analytic solutions or approximate solutions for both the vertical component $B_z(\rho,z)$ and radial component $B_\rho (\rho,z)$.
+We see that even for the static case, the vertical and radial components of $\vec B^{(0)}(\vec r)$ involve solutions to complicated Hankel transforms in Eqs. (\ref{eqBzMagnetostatic}) and (\ref{eqBrhoMagnetostatic}). Their general solutions have to be obtained via numerical integrations \cite{vanDam20
+04, vanDam2005}. However, for several cases of interest considered in sections \ref{secVertical} and \ref{secRadial}, we can derive analytic solutions or approximate solutions for both the vertical component $B_z(\rho,z)$ and radial component $B_\rho (\rho,z)$.
 
 
 %============================================================
@@ -482,7 +482,8 @@ It should be noted that although Eq. (\ref{eqMagnetostaticGaussian}) provides a 
 %============================================================
 
 \section{VRM Response from a Large Circular Transmitter Loop}
-\label{secVRMresponseFinal} Having obtained the approximations for the after-effect function and the analytical expressions for the static fields in several cases, we now look at the VRM response with Eqs. (\ref{eqGenVRMB}) and (\ref{eqGenVRMdBdt}) over a SP half-space for $\tau_1 \ll t \ll \tau_2$.
+\label{secVRMresponseFinal}
+Having obtained the approximations for the after-effect function and the analytical expressions for the static fields in several cases, we now look at the VRM response with Eqs. (\ref{eqGenVRMB}) and (\ref{eqGenVRMdBdt}) over a SP half-space for $\tau_1 \ll t \ll \tau_2$.
 
 %============================================================
 %       NEW SUBSECTION: VERTICAL VRM RESPONSE
@@ -772,7 +773,7 @@ Consider the vertical transient responses in Fig. \ref{figEMandVRMrespOffAxis} a
 %
 %----------------------------------------
 
-Figs. \ref{figEMandVRMrespLoops} and \ref{figEMandVRMrespOffAxis} demonstrate how Eqs. (\ref{eqtbeta}) and (\ref{eqtalpha}) can be used to estimate the cross-over times (dashed lines) at which $B_z (t)$ and $\partial B_z /\partial t$ within the loop become dominated by the VRM response.  The projection of $t_\alpha$ and $t_\beta$ on the corresponding total response curve will appear earlier than the point of maximum curvature on each log-log plot (also see Fig. \ref{figVRMrespZadd}). Provided that {\it a-priori} information is supplied regarding the Earth's physical properties, Eqs. (\ref{eqRB}) through (\ref{eqtalpha}) can provide some survey guides in practice. For example, Eqs. (\ref{eqRB}) and (\ref{eqRdBdt}) can be used to help adjust a loop size that renders the VRM response negligible over a specified time range. With an estimated cross-over time, one can properly remove the VRM effects during the late-time response.
+Figs. \ref{figEMandVRMrespLoops} and \ref{figEMandVRMrespOffAxis} demonstrate how Eqs. (\ref{eqtbeta}) and (\ref{eqtalpha}) can be used to estimate the cross-over times (dashed lines) at which $B_z (t)$ and $\partial B_z /\partial t$ within the loop become dominated by the VRM response.  The projection of $t_\alpha$ and $t_\beta$ on the corresponding total response curve will appear earlier than the point of maximum curvature on each log-log plot (also see Fig. \ref{figVRMrespZadd}). Provided that a-priori information is supplied regarding the Earth's physical properties, Eqs. (\ref{eqRB}) through (\ref{eqtalpha}) can provide some survey guides in practice. For example, Eqs. (\ref{eqRB}) and (\ref{eqRdBdt}) can be used to help adjust a loop size that renders the VRM response negligible over a specified time range. With an estimated cross-over time, one can properly remove the VRM effects during the late-time response.
 
 
 
@@ -891,148 +892,148 @@ Overall, our analytical expressions can serve as a convenient design code for ch
 %======================================================
 %======================================================
 
-\begin{thebibliography}{100}
-
-% (1)
-\bibitem{Buselli1982}
-G. Buselli, "The effect of near-surface superparamagnetic material on electromagnetic measurements," \emph{Geophysics}, vol. 47, no. 9, pp. 1315-1324, Sep 1982.
-
-% (2)
-\bibitem{Barsukov2001}
-P.~O. Barsukov, E.~B. Fainberg, "Superparamagnetic Effect Over Gold and Nickel Deposits," \emph{European Journal of Environmental and Engineering Geophysics}, vol. 6, pp. 61-72, 2001.
-
-% (3)
-\bibitem{Billings2003}
-S.~D. Billings, L.~R. Pasion, D.~W. Oldenburg and J. Foley, "The influence of magnetic viscosity on electromagnetic sensors," \emph{Proceedings of EUDEM-SCOT2, International Conference on Requirements and Technologies for the Detection, Removal and Neutralization of Landmines and UXO}, 2003.
-
-% (4)
-\bibitem{Pasion2007}
-L.~R. Pasion, "Inversion of Time Domain Electromagnetic Data for the Detection of Unexploded Ordnance," Ph.D. dissertation, Univ. of British Columbia, Geophysics Dept., Vancouver, 2007.
-
-% (5)
-\bibitem{Zadorozhnaya2012}
-V.~Y. Zadorozhnaya, N.~O. Kozhevnikov, P. Nyabeze, "Superparamagnetic Effect, Effect Provided by 'Red Soil' in Southern Africa," in \emph{21\textsuperscript{st} EM Induction Workshop}, Darwin, July 25-31, 2012.
-
-% (6)
-\bibitem{Dabas1992}
-M. Dabas, A. Jolivet, A. Tabbagh, "Magnetic Susceptibility and Viscosity of Soils in a Weak Time Varying Field," \emph{Geophys. J. Int.}, vol. 108, pp. 101-109, 1992.
-
-% (7)
-\bibitem{Neel1949}
-L. N\'{e}el, "Th\'{e}orie du trainage magne\'{e}tique des ferromagnetiques en grains fins avec application au terres cuites," \emph{Ann. Geophys.}, vol. 5, pp. 99-136, 1949.
-
-% (8)
-\bibitem{Moskowitz1985}
-B.~M. Moskowitz, "Magnetic viscosity, diffusion after-effect, and disaccommodation in natural and synthetic samples," \emph{Geophys. J. R. astr. Soc.}, vol. 82, pp. 143-161, 1985.
-
-% (9)
-\bibitem{Butler2003}
-D.~K. Butler, "Implications of Magnetic Backgrounds for Unexploded Ordnance Detection," \emph{Journal of Applied Geophysics}, vol. 54, pp. 111-125, Aug 2003.
-
-% (10)
-%\bibitem{Lee1981}
-%T.~Lee, "Transient Electromagnetic Response of a Polarizable Ground," \emph{Geophysics}, vol. 46, pp. 1037-1047, 1981.
-
-\bibitem{Das2004}
-Y. Das, "A Preliminary Investigation of the Effects of Soil Electromagnetic Properties on metal Detectors," \emph{Proc. SPIE}, vol. 5415, pp. 677-690, Apr. 2004.
-
-% (11)
-\bibitem{Lee1984}
-T.~Lee, "The Effect of a Superparamagnetic Layer on the Transient Electromagnetic Response of a Ground," \emph{Geophysical Prospecting}, vol. 32, pp 480-496, 1984.
-
-% (12)
-\bibitem{Pasion2002}
-L.~R. Pasion, S.~D. Billings and D.~W. Oldenburg, "Evaluating the effects of magnetic soils on TEM measurements for UXO detection," in {Expanded Abtracts}, Society of Exploration Geophysics, Tulsa, OK, pp. 1428-1431, 2002.
-
-% (13)
-\bibitem{Kozhevnikov2007}
-N.~O. Kozhevnikov and E.~Y. Antonov, "The Magnetic Relaxation Effect on TEM Responses of a Uniform Earth," \emph{Russian Geology and Geophysics}, vol. 49, pp. 197-205, 2007.
-
-% (14)
-\bibitem{Das2006}
-Y. Das, “Effects of soil electromagnetic properties on metal detectors,” \emph{IEEE Trans. Geosci. Remote Sensing}, vol. 44, pp. 1444–-1453, Jun 2006.
-
-% (30)
-\bibitem{Druyts2009}
-P. Druyts and Y. Das, "Modeling the Response of Electromagnetic Induction Sensors to Inhomogeneous Magnetic Soils with Arbitrary Relief," \emph{IEEE Trans. Geosci. Remote Sens.}, vol. 47, no. 8, pp. 2627-2638, 2009.
-
-% (15)
-\bibitem{Lelievre2006}
-P.~G. Leli\`{e}vre and D.~W. Oldenburg, "Magnetic Forward Modelling and Inversion for High Susceptibility," \emph{Geophysics Journal International}, vol. 166, pp. 76-90, 2006.
-
-% (16)
-\bibitem{Nabighian1979}
-M.~N. Nabighian, "Quasi-static transient response of a conducting half-space -- An approximate representation,' \emph{Geophysics}, vol. 44, no. 10, pp. 1700-1705, Oct 1979.
-
-% (17)
-\bibitem{EM1DTM}
-C.~G. Farquharson, "Background for Program 'EM1DTM' Version 1.0," developed under the consortium research project: Time Domain Inversion and Modeling of Electromagnetic Data. Geophysical Inversion Facility, Department of Earth \& Ocean Sciences, University of British Columbia (UBC–GIF), Vancouver, Canada, 2006. 
-
-%EM1DTM, ”A Program Library for Forward Modelling and Inversion of Time Domain Electromagnetic Data over 1D Structures,” version 1.0. Developed by the UBC-Geophysical Inversion Facility, Department of Earth and Ocean Sciences, University of British Columbia, Vancouver, British Columbia.
-
-% (18)
-\bibitem{Fannin1995}
-P.~C. Fannin and S.~W. Charles, "On the influence of distribution functions on the after-effect function of ferrofluids," \emph{Journal of Physics D}, vol. 28, pp. 239-242, 1995.
-
-% (19)
-\bibitem{Mullins1973}
-C.~E. Mullins and M.~S. Tite, "Magnetic viscosity, quadrature susceptibility, and frequency dependence of susceptibility in single-domain assemblies of magnetite and maghemite," \emph{Journal of Geophysical Research}, vol. 78, no. 5, pp. 804-809, 1973.
-
-% (20)
-\bibitem{Worm1998}
-H.~U. Worm, "On the Superparamagnetic–Stable Single Domain Transition for Magnetite, and Frequency Dependence of Susceptibility," \emph{Geophysics Journal International}, vol. 133, pp. 201–206, 1998.
-
-% (21)
-\bibitem{Igel2012}
-J. Igel, H. Preetz, and S. Altfelder, "Magnetic viscosity of tropical soils: classification and prediction as an aid for landmine detection," \emph{Geophys. J. Int.}, vol. 190, pp. 843-855, 2012.
-
-% (22)
-\bibitem{Blakely1996}
-R.~J. Blakely, "Magnetization" in \emph{Potential Theory in Gravity and Magnetic Applications,} 1st ed., Cambridge, United Kingdom, Cambrdge University Press: 1996, ch. 5, sec. 5.1, pp. 82-83.
-
-% (23)
-\bibitem{Ward1988}
-S.~H. Ward and G.~W. Hohmann, "Electromagnetic theory for geophysical applications," in M.~N. Nabighian, Ed. \emph{Electromagnetic Methods in Applied Geophysics: Volume 1 Theory}, The Society of Exploration Geophysics, 1988.
-
-% (24)
-\bibitem{Erdelyi1954}
-A. Erd\'{e}lyi, W. Magnus, F. Oderhettinger and F.~G. Tricomi, "Bateman Manuscript Project: Tables of Integral Transforms, vol. II," \emph{Prepared at the California Institute of Technology under Contract No. N 6onr-244 Task Oder XIV with the Office of Naval Research}, pp. 50, 1954.
-
-% (25)
-\bibitem{Wolfram2016}
-Wolfram Research Inc., ”Wolfram Mathematic Online Integrator,” http://integrals.wolfram.com/index.jsp, 2016. 
-
-% (26)
-\bibitem{Wong2008}
-Y.~T. Li, R.~Wong, "Integral and Series Representations of th Dirac Delta Function," \emph{Communication on Pure and Applied Analysis}, vol. 7, no. 2, pp. 229-247, 2008.
-
-% (27)
-\bibitem{Ratnanather2011}
-J.~T. Ratnanather, J.~H. Kim, S. Zhang, A.~M.~J. Davis and S.~K. Lucas, "IIPBF: a MATLAB Toolbox for Infinite Integrals of Product of Bessel Functions," \emph{ACM Trans. Math. Softw.,} V, N, Article A, Jan 2011.
-
-% (28)
-\bibitem{vanDam2004}
-R. V. Dam, J. Hendrickx, J. Harrison, B. Borchers, D. I. Norman, S. Ndur, C. Jasper, P. Niemeyer, R. Nartey, D. Vega, L. Calvo, and J. E. Simms, "Spatial variability of magnetic soil properties." in \emph{Detection and Remediation Technologies for Mines and Minelike Targets IX, 5415}, Orlando, FL, USA, 2004, pp. 665–676.
-
-% (29)
-\bibitem{vanDam2005}
-R. V. Dam, J. Harrison, J. Hendrickx, D. Hirschfeld, R. North, J. S. Y., and Li, "Mineralogy of magnetic soils at a UXO remediation site in kaho’olawe hawaii." in \emph{18th Annual Symposium on the Application of Geophysics to Engineering and Environmental Problems}, Atlanta, USA, April 2005. 
-
-
-% (31)
-\bibitem{Corless1996}
-R.~M. Corless, G.~H. Gonnet, D.~E. Hare, D.~J Jeffry and D.~E. Knuth, "On the Lambert W Function," \emph{Advances in Computational Mathematics}, vol 5, pp. 329-359, 1996.
-
-
-
-
-
-
-
-
-
-
-\end{thebibliography}
+%\begin{thebibliography}{100}
+%
+%% (1)
+%\bibitem{Buselli1982}
+%G. Buselli, "The effect of near-surface superparamagnetic material on electromagnetic measurements," \emph{Geophysics}, vol. 47, no. 9, pp. 1315-1324, Sep 1982.
+%
+%% (2)
+%\bibitem{Barsukov2001}
+%P.~O. Barsukov, E.~B. Fainberg, "Superparamagnetic Effect Over Gold and Nickel Deposits," \emph{European Journal of Environmental and Engineering Geophysics}, vol. 6, pp. 61-72, 2001.
+%
+%% (3)
+%\bibitem{Billings2003}
+%S.~D. Billings, L.~R. Pasion, D.~W. Oldenburg and J. Foley, "The influence of magnetic viscosity on electromagnetic sensors," \emph{Proceedings of EUDEM-SCOT2, International Conference on Requirements and Technologies for the Detection, Removal and Neutralization of Landmines and UXO}, 2003.
+%
+%% (4)
+%\bibitem{Pasion2007}
+%L.~R. Pasion, "Inversion of Time Domain Electromagnetic Data for the Detection of Unexploded Ordnance," Ph.D. dissertation, Univ. of British Columbia, Geophysics Dept., Vancouver, 2007.
+%
+%% (5)
+%\bibitem{Zadorozhnaya2012}
+%V.~Y. Zadorozhnaya, N.~O. Kozhevnikov, P. Nyabeze, "Superparamagnetic Effect, Effect Provided by 'Red Soil' in Southern Africa," in \emph{21\textsuperscript{st} EM Induction Workshop}, Darwin, July 25-31, 2012.
+%
+%% (6)
+%\bibitem{Dabas1992}
+%M. Dabas, A. Jolivet, A. Tabbagh, "Magnetic Susceptibility and Viscosity of Soils in a Weak Time Varying Field," \emph{Geophys. J. Int.}, vol. 108, pp. 101-109, 1992.
+%
+%% (7)
+%\bibitem{Neel1949}
+%L. N\'{e}el, "Th\'{e}orie du trainage magne\'{e}tique des ferromagnetiques en grains fins avec application au terres cuites," \emph{Ann. Geophys.}, vol. 5, pp. 99-136, 1949.
+%
+%% (8)
+%\bibitem{Moskowitz1985}
+%B.~M. Moskowitz, "Magnetic viscosity, diffusion after-effect, and disaccommodation in natural and synthetic samples," \emph{Geophys. J. R. astr. Soc.}, vol. 82, pp. 143-161, 1985.
+%
+%% (9)
+%\bibitem{Butler2003}
+%D.~K. Butler, "Implications of Magnetic Backgrounds for Unexploded Ordnance Detection," \emph{Journal of Applied Geophysics}, vol. 54, pp. 111-125, Aug 2003.
+%
+%% (10)
+%%\bibitem{Lee1981}
+%%T.~Lee, "Transient Electromagnetic Response of a Polarizable Ground," \emph{Geophysics}, vol. 46, pp. 1037-1047, 1981.
+%
+%\bibitem{Das2004}
+%Y. Das, "A Preliminary Investigation of the Effects of Soil Electromagnetic Properties on metal Detectors," \emph{Proc. SPIE}, vol. 5415, pp. 677-690, Apr. 2004.
+%
+%% (11)
+%\bibitem{Lee1984}
+%T.~Lee, "The Effect of a Superparamagnetic Layer on the Transient Electromagnetic Response of a Ground," \emph{Geophysical Prospecting}, vol. 32, pp 480-496, 1984.
+%
+%% (12)
+%\bibitem{Pasion2002}
+%L.~R. Pasion, S.~D. Billings and D.~W. Oldenburg, "Evaluating the effects of magnetic soils on TEM measurements for UXO detection," in {Expanded Abtracts}, Society of Exploration Geophysics, Tulsa, OK, pp. 1428-1431, 2002.
+%
+%% (13)
+%\bibitem{Kozhevnikov2007}
+%N.~O. Kozhevnikov and E.~Y. Antonov, "The Magnetic Relaxation Effect on TEM Responses of a Uniform Earth," \emph{Russian Geology and Geophysics}, vol. 49, pp. 197-205, 2007.
+%
+%% (14)
+%\bibitem{Das2006}
+%Y. Das, “Effects of soil electromagnetic properties on metal detectors,” \emph{IEEE Trans. Geosci. Remote Sensing}, vol. 44, pp. 1444–-1453, Jun 2006.
+%
+%% (30)
+%\bibitem{Druyts2009}
+%P. Druyts and Y. Das, "Modeling the Response of Electromagnetic Induction Sensors to Inhomogeneous Magnetic Soils with Arbitrary Relief," \emph{IEEE Trans. Geosci. Remote Sens.}, vol. 47, no. 8, pp. 2627-2638, 2009.
+%
+%% (15)
+%\bibitem{Lelievre2006}
+%P.~G. Leli\`{e}vre and D.~W. Oldenburg, "Magnetic Forward Modelling and Inversion for High Susceptibility," \emph{Geophysics Journal International}, vol. 166, pp. 76-90, 2006.
+%
+%% (16)
+%\bibitem{Nabighian1979}
+%M.~N. Nabighian, "Quasi-static transient response of a conducting half-space -- An approximate representation,' \emph{Geophysics}, vol. 44, no. 10, pp. 1700-1705, Oct 1979.
+%
+%% (17)
+%\bibitem{EM1DTM}
+%C.~G. Farquharson, "Background for Program 'EM1DTM' Version 1.0," developed under the consortium research project: Time Domain Inversion and Modeling of Electromagnetic Data. Geophysical Inversion Facility, Department of Earth \& Ocean Sciences, University of British Columbia (UBC–GIF), Vancouver, Canada, 2006. 
+%
+%%EM1DTM, ”A Program Library for Forward Modelling and Inversion of Time Domain Electromagnetic Data over 1D Structures,” version 1.0. Developed by the UBC-Geophysical Inversion Facility, Department of Earth and Ocean Sciences, University of British Columbia, Vancouver, British Columbia.
+%
+%% (18)
+%\bibitem{Fannin1995}
+%P.~C. Fannin and S.~W. Charles, "On the influence of distribution functions on the after-effect function of ferrofluids," \emph{Journal of Physics D}, vol. 28, pp. 239-242, 1995.
+%
+%% (19)
+%\bibitem{Mullins1973}
+%C.~E. Mullins and M.~S. Tite, "Magnetic viscosity, quadrature susceptibility, and frequency dependence of susceptibility in single-domain assemblies of magnetite and maghemite," \emph{Journal of Geophysical Research}, vol. 78, no. 5, pp. 804-809, 1973.
+%
+%% (20)
+%\bibitem{Worm1998}
+%H.~U. Worm, "On the Superparamagnetic–Stable Single Domain Transition for Magnetite, and Frequency Dependence of Susceptibility," \emph{Geophysics Journal International}, vol. 133, pp. 201–206, 1998.
+%
+%% (21)
+%\bibitem{Igel2012}
+%J. Igel, H. Preetz, and S. Altfelder, "Magnetic viscosity of tropical soils: classification and prediction as an aid for landmine detection," \emph{Geophys. J. Int.}, vol. 190, pp. 843-855, 2012.
+%
+%% (22)
+%\bibitem{Blakely1996}
+%R.~J. Blakely, "Magnetization" in \emph{Potential Theory in Gravity and Magnetic Applications,} 1st ed., Cambridge, United Kingdom, Cambrdge University Press: 1996, ch. 5, sec. 5.1, pp. 82-83.
+%
+%% (23)
+%\bibitem{Ward1988}
+%S.~H. Ward and G.~W. Hohmann, "Electromagnetic theory for geophysical applications," in M.~N. Nabighian, Ed. \emph{Electromagnetic Methods in Applied Geophysics: Volume 1 Theory}, The Society of Exploration Geophysics, 1988.
+%
+%% (24)
+%\bibitem{Erdelyi1954}
+%A. Erd\'{e}lyi, W. Magnus, F. Oderhettinger and F.~G. Tricomi, "Bateman Manuscript Project: Tables of Integral Transforms, vol. II," \emph{Prepared at the California Institute of Technology under Contract No. N 6onr-244 Task Oder XIV with the Office of Naval Research}, pp. 50, 1954.
+%
+%% (25)
+%\bibitem{Wolfram2016}
+%Wolfram Research Inc., ”Wolfram Mathematic Online Integrator,” http://integrals.wolfram.com/index.jsp, 2016. 
+%
+%% (26)
+%\bibitem{Wong2008}
+%Y.~T. Li, R.~Wong, "Integral and Series Representations of th Dirac Delta Function," \emph{Communication on Pure and Applied Analysis}, vol. 7, no. 2, pp. 229-247, 2008.
+%
+%% (27)
+%\bibitem{Ratnanather2011}
+%J.~T. Ratnanather, J.~H. Kim, S. Zhang, A.~M.~J. Davis and S.~K. Lucas, "IIPBF: a MATLAB Toolbox for Infinite Integrals of Product of Bessel Functions," \emph{ACM Trans. Math. Softw.,} V, N, Article A, Jan 2011.
+%
+%% (28)
+%\bibitem{vanDam2004}
+%R. V. Dam, J. Hendrickx, J. Harrison, B. Borchers, D. I. Norman, S. Ndur, C. Jasper, P. Niemeyer, R. Nartey, D. Vega, L. Calvo, and J. E. Simms, "Spatial variability of magnetic soil properties." in \emph{Detection and Remediation Technologies for Mines and Minelike Targets IX, 5415}, Orlando, FL, USA, 2004, pp. 665–676.
+%
+%% (29)
+%\bibitem{vanDam2005}
+%R. V. Dam, J. Harrison, J. Hendrickx, D. Hirschfeld, R. North, J. S. Y., and Li, "Mineralogy of magnetic soils at a UXO remediation site in kaho’olawe hawaii." in \emph{18th Annual Symposium on the Application of Geophysics to Engineering and Environmental Problems}, Atlanta, USA, April 2005. 
+%
+%
+%% (31)
+%\bibitem{Corless1996}
+%R.~M. Corless, G.~H. Gonnet, D.~E. Hare, D.~J Jeffry and D.~E. Knuth, "On the Lambert W Function," \emph{Advances in Computational Mathematics}, vol 5, pp. 329-359, 1996.
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%\end{thebibliography}
 
 
 
