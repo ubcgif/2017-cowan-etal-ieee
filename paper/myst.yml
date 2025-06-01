@@ -26,7 +26,7 @@ project:
   date: 2017-04-06 # date of publication
   # license: CC-BY-4.0  # uncomment this and the line below if open access
   # open_access: true
-  banner: banner
+  banner: banner.png
   venue:
     title: IEEE
     url: https://ieeexplore.ieee.org/document/7893711
